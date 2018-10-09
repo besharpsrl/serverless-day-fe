@@ -1,0 +1,17 @@
+/*
+  Usually we use this css file also as the main css file
+  for adding reusable rules among components and views
+*/
+
+/* Removes chrome outline from inputs and divs in modals */
+*:focus { outline: none!important; }
+
+body { margin: 0; padding: 0; font-family: "Open Sans", sans-serif; }
+
+/*
+  Basic opinionated defaults simple styles
+*/
+select.form-control,
+textarea.form-control,
+input.form-control { font-size: 16px; }
+input[type=file] { width: 100%; }

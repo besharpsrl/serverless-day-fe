@@ -1,0 +1,115 @@
+/* Table component style, we are using it for both Table and AuditTable components */
+
+.fileSize { font-weight: bold; }
+.color-red { color: #ffaa39; }
+
+.sharedWith, .sharedWithDisabled { position: absolute; left: 0; right: 0; top: 0; bottom: 0; padding: 10px; }
+.sharedWith:hover { cursor: pointer; }
+.sharedWithDisabled { background: azure; }
+.sharedCircle, .sharedCircleOwner { border-radius: 16px; width: 32px; height: 32px; background: #07ccd6; color: white; display: inline-block; margin-right: 5px; text-transform: uppercase; font-size: 14px; padding: 6px 0; text-align: center; cursor: pointer; }
+.sharedCircleOwner { background: crimson; }
+
+.rt-td { position: relative; display: flex; justify-content: center; flex-direction: column; }
+
+.actionLink { margin: 0 5px; display: inline-block; }
+
+.Modal {
+    -webkit-touch-callout: none!important;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    border-radius: 4px;
+
+    padding: 15px;
+
+    box-shadow: 0 20px 75px rgba(0, 0, 0, 0.13);
+    -webkit-box-shadow: 0 20px 75px rgba(0, 0, 0, 0.13);
+}
+
+.Overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); }
+
+.modal-close { border: none; background:none; color: #666; width: 5px; height: 5px; position: absolute; right: 10px; top: 2px; font-size: 18px; }
+.modal-close:after{
+    display: inline-block;
+    content: "\00d7"; /* This will render the 'X' */
+    color: #666;
+    font-family: "Open Sans", sans-serif;
+}
+
+.changeSharedButton {
+    min-width: 153px;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    color: white;
+    background-color: rgb(255, 153, 0);
+    border-color: #ccc;
+    text-transform: uppercase;
+    padding: 14px 0;
+    letter-spacing: 1.1px;
+    border: none;
+    margin-top: 20px;
+}
+
+.react-confirm-alert-overlay { background-color: rgba(0,0,0,0.5); }
+.react-confirm-alert-body { border-radius: 4px; padding: 15px; color: #999999; }
+.react-confirm-alert-body h1 { font-size: 27px; color: #666; }
+.react-confirm-alert-button-group button {
+    min-width: 180px;
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border-color: #ccc;
+    text-transform: uppercase;
+    padding: 14px 0;
+    letter-spacing: 1.1px;
+    border: none;
+}
+
+.react-confirm-alert-button-group button:first-child { background-color: rgb(255, 153, 0); }
+.react-confirm-alert-button-group button:only-child { width: 100%; margin: 0; }
+
+.underlined { border-bottom: 1px dotted #222222; color: #222222; word-wrap: break-word; }
+.copied { color: red; font-size: 10px; }

@@ -1,0 +1,10 @@
+/*
+We are using the .lander class in every file, so this may be considered as not dry as could have
+put only the child class in App.css, but by doing this we can provide a simple way for changing
+the style per a-container basis
+*/
+
+/* Download style */
+.Download .lander { padding: 30px 0 0 0; }
+.Download .lander h1 { font-family: "Open Sans", sans-serif; font-weight: 600; }
+.Downloade .lander p { color: #999; }

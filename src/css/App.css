@@ -1,0 +1,8 @@
+/* App generic styles */
+.App { margin-top: 15px; }
+.App .navbar-brand { font-weight: bold; }
+
+/* Amplify Standard UI graphical fixes */
+span[class*="Section__sectionFooterPrimaryContent___"] { display: inline-block; width: 100%; }
+span[class*="Section__sectionFooterPrimaryContent___"] button { width: 100%; }
+span[class*="Section__sectionFooterSecondaryContent___"] { display: none!important; }

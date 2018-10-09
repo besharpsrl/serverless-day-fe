@@ -1,0 +1,4 @@
+/* Dropzone component's  style */
+.droplist-item { word-wrap: break-word; }
+.dropzone > div { padding: 15px; }
+.uploadedList { padding-left: 0px; }

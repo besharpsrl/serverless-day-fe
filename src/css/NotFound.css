@@ -1,0 +1,2 @@
+/* Simple style for a not found page, as the navigator points to a generic route as a default */
+.NotFound { padding-top: 100px; text-align: center; }
