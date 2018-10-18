@@ -6,11 +6,11 @@ Il front-end è una **single page application** di cui effettueremo il deploy su
 
 Per realizzare l’infrastruttura occorre effettuare il provisioning e la configurazione delle seguenti risorse AWS:
 
-###front-end
+### front-end
 - Un bucket S3 privato per il front-end
 - Una distribuzione di CloudFront con il permesso di accedere al bucket S3
 
-###back-end
+### back-end
 - Una funzione lambda per testare l’integrazione
 - Una Cognito User Pool
 - Un Bucket S3 privato per gli upload degli utenti
@@ -19,7 +19,7 @@ Per realizzare l’infrastruttura occorre effettuare il provisioning e la config
 
 <br>
 
-##PREPARAZIONE DEL FRONT-END
+## PREPARAZIONE DEL FRONT-END
 Per prima cosa andiamo a creare un bucket **S3** dove caricare l’applicazione **javascript e html** per il front-end.
 
 Lo stesso bucket sarà la **sorgente** per la distribuzione di **CloudFront**.
@@ -100,11 +100,11 @@ Il front-end è quindi pronto. Il contenuto del bucket viene servito in modo eff
 
 _Attenzione! se si modificano file già presenti occorre invalidare la cache della distribuzione per vedere gli aggiornamenti._
 
-##Abilitare la Pipeline di Deploy per il front-end
+## Abilitare la Pipeline di Deploy per il front-end
 
 Per essere più rapidi nel visualizzare le nostre modifiche al front-end anche online procediamo a creare una pipeline di Deploy per la nostra soluzione.
 
-###Creare un nostro repository su codecommit
+### Creare un nostro repository su codecommit
 
 Per far funzionare la nostra pipeline di Deploy abbiamo bisogno di un repository dove pushare le modifiche al nostro codice. 
 
@@ -168,7 +168,7 @@ Andiamo sul servizio **CodePipeline** e creiamo una nuova _pipeline_.
 6. Infine per il passo di Deploy come detto scegliamo `Skip`.
 7. Alla Review cliccare `Create pipeline`.
 
-##Il front-end
+## Il front-end
 Una parte fondamentale dell’applicazione è rappresentata dal front-end, applicazione scritta in React.js che permette all’utente di loggarsi in un’area sicura, caricare, condividere e scaricare documenti.
 
 Seguendo questa guida sarà possibile integrare il front-end con il nostro back-end serverless in modo da permettere alle azioni compiute dall’utente in interfaccia di riflettersi realmente su S3 e sulle tabelle di DynamoDB.
